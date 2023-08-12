@@ -16,6 +16,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class TeleMedicineApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(TeleMedicineApplication.class, args);
+		System.out.println("working");
 	}
 
 	@Bean

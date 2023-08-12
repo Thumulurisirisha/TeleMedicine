@@ -5,16 +5,13 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import java.text.ParseException;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
 import com.example.TeleMedicine.DoctorAppointments.DoctorAppointmentRepository;
 import com.example.TeleMedicine.DoctorLogin.DoctorLoginRepository;
 import com.example.TeleMedicine.DoctorProfile.DoctorProfileRepository;
@@ -157,6 +154,5 @@ public void getAppointments() {
 	assertNotNull(a);
 	assertEquals(3,a.get("appointment_id"));
 	assertEquals("aa",a.get("doctor_name"));
-	
 }
 }
